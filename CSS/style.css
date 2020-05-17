@@ -1,0 +1,49 @@
+
+h1 {
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-size: 100px;
+    /*    background-color: #580EBC;*/
+    color: #535C68;
+    padding-top: 50px;
+}
+
+main {
+    margin-top: 30px;
+
+}
+
+.card {
+    margin-top: 40px;
+}
+
+
+.main-bg{
+      background-image: url(/IMG/question-marks-art-backgrounds.jpeg);
+    background-size: cover;
+}
+.main-bg-filter{
+ background-color: rgba(255,255,255,0.5);
+}
+
+.btn {
+    background-color: #535C68;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.2em;
+}
+
+h5 {
+    font-family: 'Fredoka One', cursive;
+    color: #535C68;
+    font-size: 2em;
+}
+
+.btn:hover {
+    background-color: #95afc0;
+    border: #95afc0;
+}
+
+marquee {
+    font-size: 1.5em;
+    font-weight: 500;
+}
