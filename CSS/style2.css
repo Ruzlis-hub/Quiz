@@ -1,7 +1,7 @@
 body {
     margin: 0;
 /*    background-color: #009688;*/
-    background-image: url(/IMG/digital.jpg);
+    background-image: url(../IMG/digital.jpg);
     font-family: sans-serif;
     background-size: cover;
     background-repeat: no-repeat;
