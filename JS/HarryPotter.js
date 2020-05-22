@@ -6,6 +6,7 @@ const correctAnswerSpan=document.querySelector(".correct-answers");
 const totalQuestionSpan2=document.querySelector(".total-question2");
 const percentage=document.querySelector(".percentage");
 const question = document.querySelector(".question");
+const picture = document.querySelector(".img");
 const op1 = document.querySelector(".option1");
 const op2 = document.querySelector(".option2");
 const op3 = document.querySelector(".option3");
@@ -36,8 +37,8 @@ options: [
 
 ],
 
-answer: 1
-//"picture": "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/08/12-Harry-Potter-the-Sorcerer-s-Stone-Harry-s-Wand-YouTube.jpg"
+answer: 1,
+picture: "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/08/12-Harry-Potter-the-Sorcerer-s-Stone-Harry-s-Wand-YouTube.jpg"
 
 },
 {
@@ -56,8 +57,8 @@ options: [
 
 ],
 
-answer: 0
-//"picture": "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/07/hagrid.jpg"
+answer: 0,
+picture: "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/07/hagrid.jpg"
 
 },
 
@@ -79,8 +80,8 @@ options: [
 
 ],
 
-answer: 0
-//"picture": "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2017/11/harrywizard.jpg"
+answer: 0,
+picture: "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2017/11/harrywizard.jpg"
 
 },
 
@@ -100,8 +101,8 @@ options: [
 
 ],
 
-answer: 3
-//"picture": "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/08/12-Harry-Potter-and-the-Deathly-Hallows-part-1-Harry-Hermione-and-Ron-at-Grimmauld-Place-part-2-YouTube-1.jpg"
+answer: 3,
+picture: "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/08/12-Harry-Potter-and-the-Deathly-Hallows-part-1-Harry-Hermione-and-Ron-at-Grimmauld-Place-part-2-YouTube-1.jpg"
 
 },
 
@@ -121,8 +122,8 @@ options: [
 
 ],
 
-answer: 2
-//"picture": "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2017/11/dobby.jpg"
+answer: 2,
+picture: "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2017/11/dobby.jpg"
 
 },
 
@@ -142,8 +143,8 @@ options: [
 
 ],
 
-answer: 0
-//"picture": "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/08/12-Harry-Potter-The-Quidditch-World-Cup-YouTube.jpg"
+answer: 0,
+picture: "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/08/12-Harry-Potter-The-Quidditch-World-Cup-YouTube.jpg"
 
 },
     
@@ -163,8 +164,8 @@ options: [
 
 ],
 
-answer: 3
-//"picture": "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/08/u.jpg"
+answer: 3,
+picture: "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/08/u.jpg"
 
 },
 
@@ -184,8 +185,8 @@ options: [
 
 ],
 
-answer: 1
-//"picture": "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/08/12-Harry-Potter-and-the-Deathly-Hallows-Xenophilius-Lovegood-Clip-YouTube-2.jpg"
+answer: 1,
+picture: "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/08/12-Harry-Potter-and-the-Deathly-Hallows-Xenophilius-Lovegood-Clip-YouTube-2.jpg"
 
 },
 
@@ -205,8 +206,8 @@ options: [
 
 ],
 
-answer: 3
-//"picture": "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/08/12-1080p-HD-Harry-Potter-and-the-Goblet-of-Fire-Yule-Ball-Scene-Potter-Waltz-YouTube.jpg"
+answer: 3,
+picture: "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/08/12-1080p-HD-Harry-Potter-and-the-Goblet-of-Fire-Yule-Ball-Scene-Potter-Waltz-YouTube.jpg"
 
 },
 
@@ -226,8 +227,8 @@ options: [
 
 ],
 
-answer: 1
-//"picture": "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/08/12-Harry-Potter-and-the-Deathly-Hallows-Part-1-3-5-Movie-CLIP-The-Three-Brothers-2010-HD-YouTube-1.png"
+answer: 1,
+picture: "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/08/12-Harry-Potter-and-the-Deathly-Hallows-Part-1-3-5-Movie-CLIP-The-Three-Brothers-2010-HD-YouTube-1.png"
 
 },
 
@@ -247,8 +248,8 @@ options: [
 
 ],
 
-answer: 0
-//"picture": "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2017/12/hogwarts-409652491.jpg"
+answer: 0,
+picture: "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2017/12/hogwarts-409652491.jpg"
 
 },
 
@@ -268,8 +269,8 @@ options: [
 
 ],
 
-answer: 2
-//"picture": "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/08/12-Voldemort-in-portrait-YouTube.jpg"
+answer: 2,
+picture: "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/08/12-Voldemort-in-portrait-YouTube.jpg"
 
 },
 
@@ -289,8 +290,8 @@ options: [
 
 ],
 
-answer: 0
-//"picture": "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/08/HP-Bathsheda-Babbling.jpg"
+answer: 0,
+picture: "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/08/HP-Bathsheda-Babbling.jpg"
 
 },
 
@@ -310,8 +311,8 @@ options: [
 
 ],
 
-answer: 2
-//"picture": "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/08/weird-sisters-HP.jpg"
+answer: 2,
+picture: "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/08/weird-sisters-HP.jpg"
 
 },
 
@@ -331,8 +332,8 @@ options: [
 
 ],
 
-answer: 3
-//"picture": "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/08/siruis-black.jpg"
+answer: 3,
+picture: "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/08/siruis-black.jpg"
 
 },
 
@@ -352,8 +353,8 @@ options: [
 
 ],
 
-answer: 1
-//"picture": "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/08/HP-potions-class-.jpg"
+answer: 1,
+picture: "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/08/HP-potions-class-.jpg"
 
 },
 
@@ -373,8 +374,8 @@ options: [
 
 ],
 
-answer: 0
-//"picture": "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/08/minstry-of-magic.jpg"
+answer: 0,
+picture: "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/08/minstry-of-magic.jpg"
 
 },
 
@@ -394,8 +395,8 @@ options: [
 
 ],
 
-answer: 2
-//"picture": "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2017/11/hermione.jpg"
+answer: 2,
+picture: "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2017/11/hermione.jpg"
 
 },
 
@@ -415,8 +416,8 @@ options: [
 
 ],
 
-answer: 0
-//"picture": "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/06/dementor.png"
+answer: 0,
+    picture: "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/06/dementor.png"
 
 },
 
@@ -436,8 +437,8 @@ options: [
 
 ],
 
-answer: 2
-//"picture": "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/04/Ron-Weasley.png"
+answer: 2,
+picture: "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/04/Ron-Weasley.png"
 
 },
 
@@ -457,8 +458,8 @@ options: [
 
 ],
 
-answer: 2
-//"picture": "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/04/Draco-Malfoy.jpg"
+answer: 2,
+picture: "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/04/Draco-Malfoy.jpg"
 
 },
 
@@ -478,8 +479,8 @@ options: [
 
 ],
 
-answer: 3
-//"picture": "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/06/gilderoy.jpg"
+answer: 3,
+picture: "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/06/gilderoy.jpg"
 
 },
 
@@ -499,8 +500,8 @@ options: [
 
 ],
 
-answer: 2
-//"picture": "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/06/voldemort.jpg"
+answer: 2,
+picture: "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/06/voldemort.jpg"
 
 },
 
@@ -520,8 +521,8 @@ options: [
 
 ],
 
-answer: 0
-//"picture": "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/06/spell_50507338.jpg"
+answer: 0,
+picture: "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/06/spell_50507338.jpg"
 
 },
 
@@ -541,8 +542,8 @@ options: [
 
 ],
 
-answer: 0
-//"picture": "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/06/snape.jpg"
+answer: 0,
+picture: "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/06/snape.jpg"
 
 },
 
@@ -562,8 +563,8 @@ options: [
 
 ],
 
-answer: 3
-//"picture": "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/04/Ron-Weasley.png"
+answer: 3,
+picture: "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/04/Ron-Weasley.png"
 
 },
 
@@ -583,8 +584,8 @@ options: [
 
 ],
 
-answer: 1
-//"picture": "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/07/spell_50443720.jpg"
+answer: 1,
+picture: "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/07/spell_50443720.jpg"
 
 },
 
@@ -604,8 +605,8 @@ options: [
 
 ],
 
-answer: 2
-//"picture": "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/04/Neville-Longbottom.jpg"
+answer: 2,
+picture: "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/04/Neville-Longbottom.jpg"
 
 },
 
@@ -625,8 +626,8 @@ options: [
 
 ],
 
-answer: 3
-//"picture": "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/07/snape.jpg"
+answer: 3,
+picture: "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/07/snape.jpg"
 
 },
 
@@ -646,8 +647,8 @@ options:[
 
 ],
 
-answer: 1
-//"picture": "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/04/handondoor-902184672.jpg"
+answer: 1,
+picture: "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/04/handondoor-902184672.jpg"
 
 },
 
@@ -667,8 +668,8 @@ options: [
 
 ],
 
-answer: 0
-//"picture": "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/10/womanfloating-182030131.jpg"
+answer: 0,
+picture: "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/10/womanfloating-182030131.jpg"
 
 },
 
@@ -688,8 +689,8 @@ options: [
 
 ],
 
-answer: 2
-//"picture": "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/10/fireball-513381956.jpg"
+answer: 2,
+picture: "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/10/fireball-513381956.jpg"
 
 },
 
@@ -709,8 +710,8 @@ options: [
 
 ],
 
-answer: 2
-//"picture": "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2017/08/waterfall.png"
+answer: 2,
+picture: "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2017/08/waterfall.png"
 
 },
 
@@ -730,8 +731,8 @@ options: [
 
 ],
 
-answer: 0
-//"picture": "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2016/11/explode.png"
+answer: 0,
+picture: "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2016/11/explode.png"
 
 },
 
@@ -753,8 +754,8 @@ options: [
 
 ],
 
-answer: 1
-//"picture": "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/06/nightsky-91765979.jpg"
+answer: 1,
+picture: "https://static.magiquiz.com/cdn-cgi/image/width=1000,quality=85,fit=scale-down,format=auto,onerror=redirect/https://static.magiquiz.com/wp-content/uploads/2018/06/nightsky-91765979.jpg"
 
 }
 ]
@@ -764,6 +765,7 @@ totalQuestionSpan.innerHTML = 10;
 
 function load() {
     questionNumberSpan.innerHTML = index + 1;
+    picture.innerHTML = '<img src="'+ questions[questionIndex].picture +'" />';
     question.innerHTML = questions[questionIndex].q;
     op1.innerHTML = questions[questionIndex].options[0];
     op2.innerHTML = questions[questionIndex].options[1];

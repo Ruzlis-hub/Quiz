@@ -6,6 +6,7 @@ const correctAnswerSpan=document.querySelector(".correct-answers");
 const totalQuestionSpan2=document.querySelector(".total-question2");
 const percentage=document.querySelector(".percentage");
 const question = document.querySelector(".question");
+const picture = document.querySelector(".img");
 const op1 = document.querySelector(".option1");
 const op2 = document.querySelector(".option2");
 const op3 = document.querySelector(".option3");
@@ -28,9 +29,9 @@ const questions = [
 "Chandler and Joey",
 "Phoebe and Joey"],
 
-        answer: 0
+        answer: 0,
 
-        //"picture": "https://static2.thequizimages.com/wordpress/wp-content/uploads/2018/04/21-20.jpg?q=50&fit=crop&w=963&h=541&dpr=1.5"
+        picture: "https://static2.thequizimages.com/wordpress/wp-content/uploads/2018/04/21-20.jpg?q=50&fit=crop&w=963&h=541&dpr=1.5"
 
 },
 
@@ -45,9 +46,9 @@ const questions = [
 "Joey"
 ],
 
-        answer: 1
+        answer: 1,
 
-        //"picture": "https://static0.thequizimages.com/wordpress/wp-content/uploads/2018/04/rachel-wedding.jpg?q=50&fit=crop&w=963&h=541&dpr=1.5"
+        picture: "https://static0.thequizimages.com/wordpress/wp-content/uploads/2018/04/rachel-wedding.jpg?q=50&fit=crop&w=963&h=541&dpr=1.5"
 
 },
 
@@ -63,9 +64,9 @@ const questions = [
 "How are ya"
 ],
 
-        answer: 2
+        answer: 2,
 
-        //"picture": "https://static0.thequizimages.com/wordpress/wp-content/uploads/2018/02/friends_307_joey_teaching_tricks_of_the_trade-e1519854784148.jpg?q=50&fit=crop&w=963&h=500&dpr=1.5"
+        picture: "https://static0.thequizimages.com/wordpress/wp-content/uploads/2018/02/friends_307_joey_teaching_tricks_of_the_trade-e1519854784148.jpg?q=50&fit=crop&w=963&h=500&dpr=1.5"
 
 },
 
@@ -80,9 +81,9 @@ const questions = [
 "Ukulele"
 ],
 
-        answer: 0
+        answer: 0,
 
-        //"picture": "https://static0.thequizimages.com/wordpress/wp-content/uploads/2018/01/phoebe-friends.jpg?q=50&fit=crop&w=963&h=541&dpr=1.5"
+        picture: "https://static0.thequizimages.com/wordpress/wp-content/uploads/2018/01/phoebe-friends.jpg?q=50&fit=crop&w=963&h=541&dpr=1.5"
 
 },
 
@@ -97,9 +98,9 @@ const questions = [
 "Westchester"
 ],
 
-        answer: 1
+        answer: 1,
 
-        //"picture": "https://static2.thequizimages.com/wordpress/wp-content/uploads/2018/04/monica-and-rachel-e1523805542305.jpg?q=50&fit=crop&w=963&h=513&dpr=1.5"
+        picture: "https://static2.thequizimages.com/wordpress/wp-content/uploads/2018/04/monica-and-rachel-e1523805542305.jpg?q=50&fit=crop&w=963&h=513&dpr=1.5"
 
 },
 
@@ -114,9 +115,9 @@ const questions = [
 "NYC Perks"
 ],
 
-        answer: 0
+        answer: 0,
 
-        //"picture": "https://static0.thequizimages.com/wordpress/wp-content/uploads/2018/04/friends-central-perk-e1523805573439.jpg?q=50&fit=crop&w=963&h=495&dpr=1.5"
+        picture: "https://static0.thequizimages.com/wordpress/wp-content/uploads/2018/04/friends-central-perk-e1523805573439.jpg?q=50&fit=crop&w=963&h=495&dpr=1.5"
 
 },
 
@@ -131,9 +132,9 @@ const questions = [
 "Houston"
 ],
 
-        answer: 2
+        answer: 2,
 
-        //"picture": "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/04/friends-4-e1523805594796.jpg?q=50&fit=crop&w=963&h=579&dpr=1.5"
+        picture: "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/04/friends-4-e1523805594796.jpg?q=50&fit=crop&w=963&h=579&dpr=1.5"
 
 },
 
@@ -148,9 +149,8 @@ const questions = [
 "Chandler"
 ],
 
-        answer: 1
-
-        //"picture": "https://static2.thequizimages.com/wordpress/wp-content/uploads/2018/04/21-20.jpg?q=50&fit=crop&w=963&h=541&dpr=1.5"
+        answer: 1,
+        picture: "https://static2.thequizimages.com/wordpress/wp-content/uploads/2018/04/21-20.jpg?q=50&fit=crop&w=963&h=541&dpr=1.5"
 
 },
 
@@ -165,9 +165,9 @@ const questions = [
 "Gunther"
 ],
 
-        answer: 2
+        answer: 2,
 
-        //"picture": "https://static0.thequizimages.com/wordpress/wp-content/uploads/2018/04/janice.jpg?q=50&fit=crop&w=963&h=597&dpr=1.5"
+        picture: "https://static0.thequizimages.com/wordpress/wp-content/uploads/2018/04/janice.jpg?q=50&fit=crop&w=963&h=597&dpr=1.5"
 
 },
 
@@ -182,9 +182,9 @@ const questions = [
 "She's a chef"
 ],
 
-        answer: 3
+        answer: 3,
 
-        //"picture": "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/04/Monica-Gellar-e1523550839314.jpg?q=50&fit=crop&w=963&h=490&dpr=1.5"
+        picture: "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/04/Monica-Gellar-e1523550839314.jpg?q=50&fit=crop&w=963&h=490&dpr=1.5"
 
 },
 
@@ -199,9 +199,9 @@ const questions = [
 "Nothing"
 ],
 
-        answer: 2
+        answer: 2,
 
-        //"picture": "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/04/joey-tribbiani-e1523550363486.jpg?q=50&fit=crop&w=963&h=508&dpr=1.5"
+        picture: "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/04/joey-tribbiani-e1523550363486.jpg?q=50&fit=crop&w=963&h=508&dpr=1.5"
 
 },
 
@@ -216,9 +216,9 @@ const questions = [
 "Days of Our Lives"
 ],
 
-        answer: 1
+        answer: 1,
 
-        //"picture": "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/04/baywatch-e1523805651700.jpg?q=50&fit=crop&w=963&h=491&dpr=1.5"
+        picture: "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/04/baywatch-e1523805651700.jpg?q=50&fit=crop&w=963&h=491&dpr=1.5"
 
 },
 
@@ -233,9 +233,9 @@ const questions = [
 "Rat babies"
 ],
 
-        answer: 1
+        answer: 1,
 
-        //"picture": "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/04/The-Chick-and-the-Duck-e1523757533231.jpg?q=50&fit=crop&w=963&h=413&dpr=1.5"
+        picture: "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/04/The-Chick-and-the-Duck-e1523757533231.jpg?q=50&fit=crop&w=963&h=413&dpr=1.5"
 
 },
 
@@ -252,7 +252,7 @@ const questions = [
 
         answer: 0,
 
-        //"picture": "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/02/Heckles.jpg?q=50&fit=crop&w=963&h=542&dpr=1.5"
+        picture: "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/02/Heckles.jpg?q=50&fit=crop&w=963&h=542&dpr=1.5"
 
 },
 
@@ -267,9 +267,9 @@ const questions = [
 "Ben"
 ],
 
-        answer: 3
+        answer: 3,
 
-        //"picture": "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/04/maxresdefault-119.jpg?q=50&fit=crop&w=963&h=541&dpr=1.5"
+        picture: "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/04/maxresdefault-119.jpg?q=50&fit=crop&w=963&h=541&dpr=1.5"
 
 },
 
@@ -285,9 +285,9 @@ const questions = [
 
 ],
 
-        answer: 1
+        answer: 1,
 
-        //"picture": "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/04/carol-susan.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+        picture: "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/04/carol-susan.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -302,9 +302,9 @@ const questions = [
 "Marcel"
 ],
 
-        answer: 3
+        answer: 3,
 
-        //"picture": "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/04/ross-marcel.jpg?q=50&fit=crop&w=963&h=541&dpr=1.5"
+        picture: "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/04/ross-marcel.jpg?q=50&fit=crop&w=963&h=541&dpr=1.5"
 
 },
 
@@ -319,9 +319,9 @@ const questions = [
 "A sweater"
 ],
 
-        answer: 1
+        answer: 1,
 
-        //"picture": "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/04/rachel-brooch.png?q=50&fit=crop&w=963&h=542&dpr=1.5"
+        picture: "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/04/rachel-brooch.png?q=50&fit=crop&w=963&h=542&dpr=1.5"
 
 },
 
@@ -336,9 +336,9 @@ const questions = [
 "Michaela"
 ],
 
-        answer: 1
+        answer: 1,
 
-        //"picture": "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/04/emma.png?q=50&fit=crop&w=963&h=505&dpr=1.5"
+        picture: "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/04/emma.png?q=50&fit=crop&w=963&h=505&dpr=1.5"
 
 },
 
@@ -353,9 +353,9 @@ const questions = [
 "Monica"
 ],
 
-        answer: 3
+        answer: 3,
 
-        //"picture": "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/04/richard.png?q=50&fit=crop&w=963&h=540&dpr=1.5"
+        picture: "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/04/richard.png?q=50&fit=crop&w=963&h=540&dpr=1.5"
 
 },
 
@@ -370,9 +370,9 @@ const questions = [
 "Duncan"
 ],
 
-        answer: 1
+        answer: 1,
 
-        //"picture": "https://static2.thequizimages.com/wordpress/wp-content/uploads/2018/04/phoebe-wedding.jpg?q=50&fit=crop&w=963&h=541&dpr=1.5"
+        picture: "https://static2.thequizimages.com/wordpress/wp-content/uploads/2018/04/phoebe-wedding.jpg?q=50&fit=crop&w=963&h=541&dpr=1.5"
 
 },
 
@@ -387,9 +387,9 @@ const questions = [
 "At Chandler's apartment"
 ],
 
-        answer: 1
+        answer: 1,
 
-        //"picture": "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/04/monica-chandler.jpg?q=50&fit=crop&w=963&h=577&dpr=1.5"
+        picture: "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/04/monica-chandler.jpg?q=50&fit=crop&w=963&h=577&dpr=1.5"
 
 },
 
@@ -404,9 +404,9 @@ const questions = [
 "Outside Central Perk"
 ],
 
-        answer: 1
+        answer: 1,
 
-        //"picture": "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/04/ross-rachel-1.jpg?q=50&fit=crop&w=963&h=541&dpr=1.5"
+        picture: "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/04/ross-rachel-1.jpg?q=50&fit=crop&w=963&h=541&dpr=1.5"
 
 },
 
@@ -421,9 +421,9 @@ const questions = [
 "Chandler"
 ],
 
-        answer: 1
+        answer: 1,
 
-        //"picture": "https://static0.thequizimages.com/wordpress/wp-content/uploads/2018/04/friends-141255-e1523549708990.jpg?q=50&fit=crop&w=963&h=537&dpr=1.5"
+        picture: "https://static0.thequizimages.com/wordpress/wp-content/uploads/2018/04/friends-141255-e1523549708990.jpg?q=50&fit=crop&w=963&h=537&dpr=1.5"
 
 },
 
@@ -438,9 +438,9 @@ const questions = [
 "Ross and Chandler"
 ],
 
-        answer: 1
+        answer: 1,
 
-        //"picture": "https://static0.thequizimages.com/wordpress/wp-content/uploads/2018/03/friends-nbc-1120.jpg?q=50&fit=crop&w=963&h=549&dpr=1.5"
+        picture: "https://static0.thequizimages.com/wordpress/wp-content/uploads/2018/03/friends-nbc-1120.jpg?q=50&fit=crop&w=963&h=549&dpr=1.5"
 
 },
 
@@ -455,9 +455,9 @@ const questions = [
 "Monica and Joey"
 ],
 
-        answer: 1
+        answer: 1,
 
-        //"picture": "https://static2.thequizimages.com/wordpress/wp-content/uploads/2018/03/friends-copy-2.jpg?q=50&fit=crop&w=963&h=554&dpr=1.5"
+        picture: "https://static2.thequizimages.com/wordpress/wp-content/uploads/2018/03/friends-copy-2.jpg?q=50&fit=crop&w=963&h=554&dpr=1.5"
 
 },
 
@@ -472,9 +472,9 @@ const questions = [
 "Gunther"
 ],
 
-        answer: 1
+        answer: 1,
 
-        //"picture": "https://static0.thequizimages.com/wordpress/wp-content/uploads/2018/03/Monica-apartment-friends-rachel-ross-joey-chandler-phoebe-e1522121037105.jpg?q=50&fit=crop&w=963&h=541&dpr=1.5"
+        picture: "https://static0.thequizimages.com/wordpress/wp-content/uploads/2018/03/Monica-apartment-friends-rachel-ross-joey-chandler-phoebe-e1522121037105.jpg?q=50&fit=crop&w=963&h=541&dpr=1.5"
 
 },
 
@@ -489,9 +489,9 @@ const questions = [
 "Phoebe"
 ],
 
-        answer: 3
+        answer: 3,
 
-        //"picture": "https://static2.thequizimages.com/wordpress/wp-content/uploads/2018/04/friends.jpg?q=50&fit=crop&w=963&h=719&dpr=1.5"
+        picture: "https://static2.thequizimages.com/wordpress/wp-content/uploads/2018/04/friends.jpg?q=50&fit=crop&w=963&h=719&dpr=1.5"
 
 },
 
@@ -506,9 +506,9 @@ const questions = [
 "Ross"
 ],
 
-        answer: 1
+        answer: 1,
 
-        //"picture": "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/04/phoebe-mike.jpg?q=50&fit=crop&w=963&h=639&dpr=1.5"
+        picture: "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/04/phoebe-mike.jpg?q=50&fit=crop&w=963&h=639&dpr=1.5"
 
 },
 
@@ -523,9 +523,9 @@ const questions = [
 "Stacy's Mom"
 ],
 
-        answer: 1
+        answer: 1,
 
-        //"picture": "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/04/emma-ross.jpg?q=50&fit=crop&w=963&h=665&dpr=1.5"
+        picture: "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/04/emma-ross.jpg?q=50&fit=crop&w=963&h=665&dpr=1.5"
 
 },
 
@@ -545,9 +545,9 @@ const questions = [
 
 ],
 
-        answer: 1
+        answer: 1,
 
-        //"picture": "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/04/17-rachel-green-jewish.w529.h352-e1523550448401.jpg?q=50&fit=crop&w=963&h=505&dpr=1.5"
+        picture: "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/04/17-rachel-green-jewish.w529.h352-e1523550448401.jpg?q=50&fit=crop&w=963&h=505&dpr=1.5"
 
 },
 
@@ -567,9 +567,9 @@ const questions = [
 
 ],
 
-        answer: 1
+        answer: 1,
 
-        //"picture": "https://static0.thequizimages.com/wordpress/wp-content/uploads/2018/04/treegar.jpg?q=50&fit=crop&w=963&h=456&dpr=1.5"
+        picture: "https://static0.thequizimages.com/wordpress/wp-content/uploads/2018/04/treegar.jpg?q=50&fit=crop&w=963&h=456&dpr=1.5"
 
 },
 
@@ -591,7 +591,7 @@ const questions = [
 
         answer: 3,
 
-        //"picture": "https://static2.thequizimages.com/wordpress/wp-content/uploads/2018/04/eddie.jpg?q=50&fit=crop&w=963&h=541&dpr=1.5"
+        picture: "https://static2.thequizimages.com/wordpress/wp-content/uploads/2018/04/eddie.jpg?q=50&fit=crop&w=963&h=541&dpr=1.5"
 
 },
 
@@ -611,9 +611,9 @@ const questions = [
 
 ],
 
-        answer: 2
+        answer: 2,
 
-        //"picture": "https://static2.thequizimages.com/wordpress/wp-content/uploads/2018/04/phoebe-music.jpg?q=50&fit=crop&w=963&h=541&dpr=1.5"
+        picture: "https://static2.thequizimages.com/wordpress/wp-content/uploads/2018/04/phoebe-music.jpg?q=50&fit=crop&w=963&h=541&dpr=1.5"
 
 },
 
@@ -633,9 +633,9 @@ const questions = [
 
 ],
 
-        answer: 1
+        answer: 1,
 
-        //"picture": "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/04/08-richard-friends.w529.h352-e1523550868390.jpg?q=50&fit=crop&w=963&h=487&dpr=1.5"
+        picture: "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/04/08-richard-friends.w529.h352-e1523550868390.jpg?q=50&fit=crop&w=963&h=487&dpr=1.5"
 
 },
 
@@ -655,9 +655,9 @@ const questions = [
 
 ],
 
-        answer: 0
+        answer: 0,
 
-        //"picture": "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/04/friends-triplets.jpg?q=50&fit=crop&w=963&h=728&dpr=1.5"
+        picture: "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/04/friends-triplets.jpg?q=50&fit=crop&w=963&h=728&dpr=1.5"
 
 },
 
@@ -677,9 +677,9 @@ const questions = [
 
 ],
 
-        answer: 1
+        answer: 1,
 
-        //"picture": "https://static2.thequizimages.com/wordpress/wp-content/uploads/2018/04/chandler-dad.jpg?q=50&fit=crop&w=963&h=642&dpr=1.5"
+        picture: "https://static2.thequizimages.com/wordpress/wp-content/uploads/2018/04/chandler-dad.jpg?q=50&fit=crop&w=963&h=642&dpr=1.5"
 
 },
 
@@ -699,9 +699,9 @@ const questions = [
 
 ],
 
-        answer: 1
+        answer: 1,
 
-        //"picture": "https://static2.thequizimages.com/wordpress/wp-content/uploads/2018/04/rachel-plane.jpg?q=50&fit=crop&w=963&h=541&dpr=1.5"
+        picture: "https://static2.thequizimages.com/wordpress/wp-content/uploads/2018/04/rachel-plane.jpg?q=50&fit=crop&w=963&h=541&dpr=1.5"
 
 },
 
@@ -721,9 +721,9 @@ const questions = [
 
 ],
 
-        answer: 1
+        answer: 1,
 
-        //"picture": "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/04/janice-husband.png?q=50&fit=crop&w=963&h=542&dpr=1.5"
+        picture: "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/04/janice-husband.png?q=50&fit=crop&w=963&h=542&dpr=1.5"
 
 },
 
@@ -743,9 +743,9 @@ const questions = [
 
 ],
 
-        answer: 3
+        answer: 3,
 
-        //"picture": "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/04/rachel-chandler-e1523762366966.jpg?q=50&fit=crop&w=963&h=658&dpr=1.5"
+        picture: "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/04/rachel-chandler-e1523762366966.jpg?q=50&fit=crop&w=963&h=658&dpr=1.5"
 
 },
 
@@ -765,9 +765,9 @@ const questions = [
 
 ],
 
-        answer: 1
+        answer: 1,
 
-        //"picture": "https://static0.thequizimages.com/wordpress/wp-content/uploads/2018/04/phoebe-tattoo.jpg?q=50&fit=crop&w=963&h=724&dpr=1.5"
+        picture: "https://static0.thequizimages.com/wordpress/wp-content/uploads/2018/04/phoebe-tattoo.jpg?q=50&fit=crop&w=963&h=724&dpr=1.5"
 
 },
 
@@ -787,9 +787,9 @@ const questions = [
 
 ],
 
-        answer: 1
+        answer: 1,
 
-        //"picture": "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/04/phoebe-birth-mother.jpg?q=50&fit=crop&w=963&h=541&dpr=1.5"
+        picture: "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/04/phoebe-birth-mother.jpg?q=50&fit=crop&w=963&h=541&dpr=1.5"
 
 },
 
@@ -809,9 +809,9 @@ const questions = [
 
 ],
 
-        answer: 1
+        answer: 1,
 
-        //"picture": "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/03/849776_desktop-wallpapers-friends_1483x1500_h.jpg?q=50&fit=crop&w=963&h=677&dpr=1.5"
+        picture: "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/03/849776_desktop-wallpapers-friends_1483x1500_h.jpg?q=50&fit=crop&w=963&h=677&dpr=1.5"
 
 },
 
@@ -831,9 +831,9 @@ const questions = [
 
 ],
 
-        answer: 1
+        answer: 1,
 
-        //"picture": "https://static0.thequizimages.com/wordpress/wp-content/uploads/2018/04/chandler-mom.jpg?q=50&fit=crop&w=963&h=541&dpr=1.5"
+        picture: "https://static0.thequizimages.com/wordpress/wp-content/uploads/2018/04/chandler-mom.jpg?q=50&fit=crop&w=963&h=541&dpr=1.5"
 
 },
 
@@ -853,9 +853,9 @@ const questions = [
 
 ],
 
-        answer: 1
+        answer: 1,
 
-        //"picture": "https://static3.thequizimages.com/wordpress/wp-content/uploads/2017/12/Joey-Tribbiani.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+        picture: "https://static3.thequizimages.com/wordpress/wp-content/uploads/2017/12/Joey-Tribbiani.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -875,9 +875,9 @@ const questions = [
 
 ],
 
-        answer: 1
+        answer: 1,
 
-        //"picture": "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/04/rachel-monica-college.jpg?q=50&fit=crop&w=963&h=627&dpr=1.5"
+        picture: "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/04/rachel-monica-college.jpg?q=50&fit=crop&w=963&h=627&dpr=1.5"
 
 },
 
@@ -897,9 +897,9 @@ const questions = [
 
 ],
 
-        answer: 0
+        answer: 0,
 
-        //"picture": "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/04/TOWPrincessConsuela.jpg?q=50&fit=crop&w=963&h=729&dpr=1.5"
+        picture: "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/04/TOWPrincessConsuela.jpg?q=50&fit=crop&w=963&h=729&dpr=1.5"
 
 },
 
@@ -919,9 +919,9 @@ const questions = [
 
 ],
 
-        answer: 3
+        answer: 3,
 
-        //"picture": "https://static2.thequizimages.com/wordpress/wp-content/uploads/2018/04/barbados.jpg?q=50&fit=crop&w=963&h=541&dpr=1.5"
+        picture: "https://static2.thequizimages.com/wordpress/wp-content/uploads/2018/04/barbados.jpg?q=50&fit=crop&w=963&h=541&dpr=1.5"
 
 },
 
@@ -941,9 +941,9 @@ const questions = [
 
 ],
 
-        answer: 1
+        answer: 1,
 
-        //"picture": "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/04/monica-chandler-baby.png?q=50&fit=crop&w=963&h=704&dpr=1.5"
+        picture: "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/04/monica-chandler-baby.png?q=50&fit=crop&w=963&h=704&dpr=1.5"
 
 },
 
@@ -963,9 +963,9 @@ const questions = [
 
 ],
 
-        answer: 1
+        answer: 1,
 
-        //"picture": "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/04/friends-cups.jpg?q=50&fit=crop&w=963&h=541&dpr=1.5"
+        picture: "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/04/friends-cups.jpg?q=50&fit=crop&w=963&h=541&dpr=1.5"
 
 }
 ]
@@ -975,6 +975,7 @@ totalQuestionSpan.innerHTML = 10;
 
 function load() {
     questionNumberSpan.innerHTML = index + 1;
+    picture.innerHTML = '<img src="'+ questions[questionIndex].picture +'" />';
     question.innerHTML = questions[questionIndex].q;
     op1.innerHTML = questions[questionIndex].options[0];
     op2.innerHTML = questions[questionIndex].options[1];

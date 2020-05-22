@@ -6,6 +6,7 @@ const correctAnswerSpan=document.querySelector(".correct-answers");
 const totalQuestionSpan2=document.querySelector(".total-question2");
 const percentage=document.querySelector(".percentage");
 const question = document.querySelector(".question");
+const picture = document.querySelector(".img");
 const op1 = document.querySelector(".option1");
 const op2 = document.querySelector(".option2");
 const op3 = document.querySelector(".option3");
@@ -36,9 +37,9 @@ options: [
 
 ],
 
-answer: 0
+answer: 0,
 
-//"picture": "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/08/simpsons-fam-usa-today-e1534958898208.jpg?q=50&fit=crop&w=963&h=505&dpr=1.5"
+picture: "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/08/simpsons-fam-usa-today-e1534958898208.jpg?q=50&fit=crop&w=963&h=505&dpr=1.5"
 
 },
 
@@ -58,9 +59,9 @@ options: [
 
 ],
 
-answer: 3
+answer: 3,
 
-//"picture": "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/08/lisa-vs-malibu-stacy-daily-dot-e1534960179424.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+picture: "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/08/lisa-vs-malibu-stacy-daily-dot-e1534960179424.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -81,9 +82,9 @@ options: [
 
 ],
 
-answer: 1
+answer: 1,
 
-//"picture": "https://static0.thequizimages.com/wordpress/wp-content/uploads/2018/08/kbbl-e1534961746518.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+picture: "https://static0.thequizimages.com/wordpress/wp-content/uploads/2018/08/kbbl-e1534961746518.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -103,9 +104,9 @@ options: [
 
 ],
 
-answer: 1
+answer: 1,
 
-//"picture": "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/08/homer-and-marge-la-times-e1534965728992.jpg?q=50&fit=crop&w=963&h=482&dpr=1.5"
+picture: "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/08/homer-and-marge-la-times-e1534965728992.jpg?q=50&fit=crop&w=963&h=482&dpr=1.5"
 
 },
 
@@ -125,9 +126,9 @@ options: [
 
 ],
 
-answer: 2
+answer: 2,
 
-//"picture": "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/08/homer-marge-deadline-e1534969961494.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+picture: "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/08/homer-marge-deadline-e1534969961494.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -147,9 +148,9 @@ options: [
 
 ],
 
-answer: 0
+answer: 0,
 
-//"picture": "https://static0.thequizimages.com/wordpress/wp-content/uploads/2018/08/maggie-oscars-e1534973803850.jpg?q=50&fit=crop&w=963&h=482&dpr=1.5"
+picture: "https://static0.thequizimages.com/wordpress/wp-content/uploads/2018/08/maggie-oscars-e1534973803850.jpg?q=50&fit=crop&w=963&h=482&dpr=1.5"
 
 },
 
@@ -169,9 +170,9 @@ options: [
 
 ],
 
-answer: 1
+answer: 1,
 
-//"picture": "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/08/mr.-burns-ew-e1534975070726.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+picture: "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/08/mr.-burns-ew-e1534975070726.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -191,9 +192,9 @@ options: [
 
 ],
 
-answer: 2
+answer: 2,
 
-//"picture": "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/08/homer-donut-pinterest-e1534975891953.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+picture: "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/08/homer-donut-pinterest-e1534975891953.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -213,9 +214,9 @@ options: [
 
 ],
 
-answer: 1
+answer: 1,
 
-//"picture": "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/08/fox-studio-e1534978137489.jpeg?q=50&fit=crop&w=963&h=483&dpr=1.5"
+picture: "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/08/fox-studio-e1534978137489.jpeg?q=50&fit=crop&w=963&h=483&dpr=1.5"
 
 },
 
@@ -235,9 +236,9 @@ options: [
 
 ],
 
-answer: 2
+answer: 2,
 
-//"picture": "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/08/kang-and-kodos-e1543524036320.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+picture: "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/08/kang-and-kodos-e1543524036320.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -257,9 +258,9 @@ options: [
 
 ],
 
-answer: 0
+answer: 0,
 
-//"picture": "https://static0.thequizimages.com/wordpress/wp-content/uploads/2018/08/marge-homer-bed-ksite-tv-e1534982181959.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+picture: "https://static0.thequizimages.com/wordpress/wp-content/uploads/2018/08/marge-homer-bed-ksite-tv-e1534982181959.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -279,9 +280,9 @@ options: [
 
 ],
 
-answer: 2
+answer: 2,
 
-//"picture": "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/08/new-york-car-dskfjsh.jpg?q=50&fit=crop&w=963&h=503&dpr=1.5"
+picture: "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/08/new-york-car-dskfjsh.jpg?q=50&fit=crop&w=963&h=503&dpr=1.5"
 
 },
 
@@ -301,9 +302,9 @@ options: [
 
 ],
 
-answer: 3
+answer: 3,
 
-//"picture": "https://static2.thequizimages.com/wordpress/wp-content/uploads/2018/08/lisa-school-imdb-e1534988002587.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+picture: "https://static2.thequizimages.com/wordpress/wp-content/uploads/2018/08/lisa-school-imdb-e1534988002587.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -323,9 +324,9 @@ options: [
 
 ],
 
-answer: 0
+answer: 0,
 
-//"picture": "https://static2.thequizimages.com/wordpress/wp-content/uploads/2018/08/homer-screen-rant-e1534988318385.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+picture: "https://static2.thequizimages.com/wordpress/wp-content/uploads/2018/08/homer-screen-rant-e1534988318385.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -345,9 +346,9 @@ options: [
 
 ],
 
-answer: 1
+answer: 1,
 
-//"picture": "https://static0.thequizimages.com/wordpress/wp-content/uploads/2018/08/bart-thoughtco-e1534989566811.jpg?q=50&fit=crop&w=963&h=482&dpr=1.5"
+picture: "https://static0.thequizimages.com/wordpress/wp-content/uploads/2018/08/bart-thoughtco-e1534989566811.jpg?q=50&fit=crop&w=963&h=482&dpr=1.5"
 
 },
 
@@ -367,9 +368,9 @@ options: [
 
 ],
 
-answer: 2
+answer: 2,
 
-//"picture": "https://static2.thequizimages.com/wordpress/wp-content/uploads/2018/08/simpsons-band-dskfjhds.jpg?q=50&fit=crop&w=963&h=503&dpr=1.5"
+picture: "https://static2.thequizimages.com/wordpress/wp-content/uploads/2018/08/simpsons-band-dskfjhds.jpg?q=50&fit=crop&w=963&h=503&dpr=1.5"
 
 },
 
@@ -389,9 +390,9 @@ options: [
 
 ],
 
-answer: 1
+answer: 1,
 
-//"picture": "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/08/bart-driving-reddit-e1534991183103.png?q=50&fit=crop&w=963&h=482&dpr=1.5"
+picture: "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/08/bart-driving-reddit-e1534991183103.png?q=50&fit=crop&w=963&h=482&dpr=1.5"
 
 },
 
@@ -411,9 +412,9 @@ options: [
 
 ],
 
-answer: 2
+answer: 2,
 
-//"picture": "https://static0.thequizimages.com/wordpress/wp-content/uploads/2018/08/homer-bart-grandpa-tsox-e1534992456821.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+picture: "https://static0.thequizimages.com/wordpress/wp-content/uploads/2018/08/homer-bart-grandpa-tsox-e1534992456821.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -433,9 +434,9 @@ options: [
 
 ],
 
-answer: 1
+answer: 1,
 
-//"picture": "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/08/apu-yahoo-e1534993618173.jpg?q=50&fit=crop&w=963&h=482&dpr=1.5"
+picture: "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/08/apu-yahoo-e1534993618173.jpg?q=50&fit=crop&w=963&h=482&dpr=1.5"
 
 },
 
@@ -455,9 +456,9 @@ options: [
 
 ],
 
-answer: 2
+answer: 2,
 
-//"picture": "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/08/troy-mcclure-dkjshf.jpg?q=50&fit=crop&w=963&h=503&dpr=1.5"
+picture: "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/08/troy-mcclure-dkjshf.jpg?q=50&fit=crop&w=963&h=503&dpr=1.5"
 
 },
 
@@ -477,9 +478,9 @@ options: [
 
 ],
 
-answer: 0
+answer: 0,
 
-//"picture": "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/08/simpsons-family-the-verge-e1534994691646.jpg?q=50&fit=crop&w=963&h=482&dpr=1.5"
+picture: "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/08/simpsons-family-the-verge-e1534994691646.jpg?q=50&fit=crop&w=963&h=482&dpr=1.5"
 
 },
 
@@ -499,9 +500,9 @@ options: [
 
 ],
 
-answer: 2
+answer: 2,
 
-//"picture": "https://static0.thequizimages.com/wordpress/wp-content/uploads/2018/08/homer-marge-time-e1534995824755.jpg?q=50&fit=crop&w=963&h=482&dpr=1.5"
+picture: "https://static0.thequizimages.com/wordpress/wp-content/uploads/2018/08/homer-marge-time-e1534995824755.jpg?q=50&fit=crop&w=963&h=482&dpr=1.5"
 
 },
 
@@ -521,9 +522,9 @@ options: [
 
 ],
 
-answer: 3
+answer: 3,
 
-//"picture": "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/08/jessica-lovejoy-e1534996448256.jpg?q=50&fit=crop&w=963&h=482&dpr=1.5"
+picture: "https://static1.thequizimages.com/wordpress/wp-content/uploads/2018/08/jessica-lovejoy-e1534996448256.jpg?q=50&fit=crop&w=963&h=482&dpr=1.5"
 
 },
 
@@ -543,9 +544,9 @@ options: [
 
 ],
 
-answer: 1
+answer: 1,
 
-//"picture": "https://static2.thequizimages.com/wordpress/wp-content/uploads/2018/08/marge-money-time-e1535025777315.jpg?q=50&fit=crop&w=963&h=482&dpr=1.5"
+picture: "https://static2.thequizimages.com/wordpress/wp-content/uploads/2018/08/marge-money-time-e1535025777315.jpg?q=50&fit=crop&w=963&h=482&dpr=1.5"
 
 },
 
@@ -565,9 +566,9 @@ options: [
 
 ],
 
-answer: 3
+answer: 3,
 
-//"picture": "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/08/grampa-simpson-sdkjfds.jpg?q=50&fit=crop&w=963&h=503&dpr=1.5"
+picture: "https://static3.thequizimages.com/wordpress/wp-content/uploads/2018/08/grampa-simpson-sdkjfds.jpg?q=50&fit=crop&w=963&h=503&dpr=1.5"
 
 },
 
@@ -587,9 +588,9 @@ options: [
 
 ],
 
-answer: 2
+answer: 2,
 
-//"picture": "https://static0.thequizimages.com/wordpress/wp-content/uploads/2019/01/simpsons_06_23__719260.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+picture: "https://static0.thequizimages.com/wordpress/wp-content/uploads/2019/01/simpsons_06_23__719260.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -609,9 +610,9 @@ options: [
 
 ],
 
-answer: 3
+answer: 3,
 
-//"picture": "https://static0.thequizimages.com/wordpress/wp-content/uploads/2018/04/Ned-Flanders-the-simpsons.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+picture: "https://static0.thequizimages.com/wordpress/wp-content/uploads/2018/04/Ned-Flanders-the-simpsons.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -631,9 +632,9 @@ options: [
 
 ],
 
-answer: 0
+answer: 0,
 
-//"picture": "https://static2.thequizimages.com/wordpress/wp-content/uploads/2019/01/troy-mcclure-facts-Cropped.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+picture: "https://static2.thequizimages.com/wordpress/wp-content/uploads/2019/01/troy-mcclure-facts-Cropped.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -653,9 +654,9 @@ options: [
 
 ],
 
-answer: 1
+answer: 1,
 
-//"picture": "https://static1.thequizimages.com/wordpress/wp-content/uploads/2019/01/steamed-hams-Cropped.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+    picture: "https://static1.thequizimages.com/wordpress/wp-content/uploads/2019/01/steamed-hams-Cropped.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -675,9 +676,9 @@ options: [
 
 ],
 
-answer: 2
+answer: 2,
 
-//"picture": "https://static3.thequizimages.com/wordpress/wp-content/uploads/2019/01/simp_LurleenLumpkin_F-56a00c535f9b58eba4aea8f0.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+picture: "https://static3.thequizimages.com/wordpress/wp-content/uploads/2019/01/simp_LurleenLumpkin_F-56a00c535f9b58eba4aea8f0.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -697,9 +698,9 @@ options: [
 
 ],
 
-answer: 1
+answer: 1,
 
-//"picture": "https://static3.thequizimages.com/wordpress/wp-content/uploads/2019/01/Simpsons_08_08-Cropped.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+picture: "https://static3.thequizimages.com/wordpress/wp-content/uploads/2019/01/Simpsons_08_08-Cropped.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -719,9 +720,9 @@ options: [
 
 ],
 
-answer: 2
+answer: 2,
 
-//"picture": "https://static2.thequizimages.com/wordpress/wp-content/uploads/2019/01/Simpsons_05_15__481014-Cropped.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+picture: "https://static2.thequizimages.com/wordpress/wp-content/uploads/2019/01/Simpsons_05_15__481014-Cropped.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -741,9 +742,9 @@ options: [
 
 ],
 
-answer: 1
+answer: 1,
 
-//"picture": "https://static0.thequizimages.com/wordpress/wp-content/uploads/2019/01/Simpsons_05_14_P2-Cropped.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+picture: "https://static0.thequizimages.com/wordpress/wp-content/uploads/2019/01/Simpsons_05_14_P2-Cropped.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -763,9 +764,9 @@ options: [
 
 ],
 
-answer: 2
+answer: 2,
 
-//"picture": "https://static1.thequizimages.com/wordpress/wp-content/uploads/2019/01/Simpsons_05_03-Cropped.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+picture: "https://static1.thequizimages.com/wordpress/wp-content/uploads/2019/01/Simpsons_05_03-Cropped.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -785,9 +786,9 @@ options: [
 
 ],
 
-answer: 0
+answer: 0,
 
-//"picture": "https://static3.thequizimages.com/wordpress/wp-content/uploads/2019/01/Simpsons_04_15-Cropped.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+picture: "https://static3.thequizimages.com/wordpress/wp-content/uploads/2019/01/Simpsons_04_15-Cropped.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -807,9 +808,9 @@ options: [
 
 ],
 
-answer: 1
+answer: 1,
 
-//"picture": "https://static1.thequizimages.com/wordpress/wp-content/uploads/2019/01/download-Cropped.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+picture: "https://static1.thequizimages.com/wordpress/wp-content/uploads/2019/01/download-Cropped.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 }
 
@@ -820,6 +821,7 @@ totalQuestionSpan.innerHTML = 10;
 
 function load() {
     questionNumberSpan.innerHTML = index + 1;
+    picture.innerHTML = '<img src="'+ questions[questionIndex].picture +'" />';
     question.innerHTML = questions[questionIndex].q;
     op1.innerHTML = questions[questionIndex].options[0];
     op2.innerHTML = questions[questionIndex].options[1];

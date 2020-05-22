@@ -6,6 +6,7 @@ const correctAnswerSpan=document.querySelector(".correct-answers");
 const totalQuestionSpan2=document.querySelector(".total-question2");
 const percentage=document.querySelector(".percentage");
 const question = document.querySelector(".question");
+const picture = document.querySelector(".img");
 const op1 = document.querySelector(".option1");
 const op2 = document.querySelector(".option2");
 const op3 = document.querySelector(".option3");
@@ -36,8 +37,8 @@ options: [
 
 ],
 
-answer: 3
-//"picture": "https://cdn.vox-cdn.com/thumbor/fBs5dqKJipy7v5Z7Ms3NA2gWkyw=/0x0:825x464/920x613/filters:focal(347x166:479x298):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/66047434/DOiAi2WUEAE3A1Y.0.jpg"
+answer: 3,
+picture: "https://cdn.vox-cdn.com/thumbor/fBs5dqKJipy7v5Z7Ms3NA2gWkyw=/0x0:825x464/920x613/filters:focal(347x166:479x298):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/66047434/DOiAi2WUEAE3A1Y.0.jpg"
 
 },
 
@@ -57,8 +58,8 @@ options: [
 
 ],
 
-answer: 1
-//"picture": "https://static1.thequizimages.com/wordpress/wp-content/uploads/2017/08/Screenshot-2017-08-24-at-1.08.19-PM-e1523322613834.png?q=50&fit=crop&w=963&h=481&dpr=1.5"
+answer: 1,
+picture: "https://static1.thequizimages.com/wordpress/wp-content/uploads/2017/08/Screenshot-2017-08-24-at-1.08.19-PM-e1523322613834.png?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -78,8 +79,8 @@ options: [
 
 ],
 
-answer: 0
-//"picture": "https://static1.thequizimages.com/wordpress/wp-content/uploads/2017/11/Frodo-Sting-The-Lord-of-the-Rings.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+answer: 0,
+picture: "https://static1.thequizimages.com/wordpress/wp-content/uploads/2017/11/Frodo-Sting-The-Lord-of-the-Rings.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -99,8 +100,8 @@ options: [
 
 ],
 
-answer: 0
-//"picture": "https://static1.thequizimages.com/wordpress/wp-content/uploads/2017/06/Bilbo-Baggins-in-The-Lord-of-the-Rings.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+answer: 0,
+picture: "https://static1.thequizimages.com/wordpress/wp-content/uploads/2017/06/Bilbo-Baggins-in-The-Lord-of-the-Rings.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -120,8 +121,8 @@ options: [
 
 ],
 
-answer: 1
-//"picture": "https://static3.thequizimages.com/wordpress/wp-content/uploads/2017/06/Gandalf-You-Shall-Not-Pass-The-Lord-of-the-Rings.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+answer: 1,
+picture: "https://static3.thequizimages.com/wordpress/wp-content/uploads/2017/06/Gandalf-You-Shall-Not-Pass-The-Lord-of-the-Rings.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -141,8 +142,8 @@ options: [
 
 ],
 
-answer: 1
-//"picture": "https://static0.thequizimages.com/wordpress/wp-content/uploads/2017/11/Strider-Aragon-The-Lord-of-the-Rings.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+answer: 1,
+picture: "https://static0.thequizimages.com/wordpress/wp-content/uploads/2017/11/Strider-Aragon-The-Lord-of-the-Rings.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -162,8 +163,8 @@ options: [
 
 ],
 
-answer: 2
-//"picture": "https://static2.thequizimages.com/wordpress/wp-content/uploads/2017/08/LordoftheRings06-e1503608522745.jpg?q=50&fit=crop&w=963&h=494&dpr=1.5"
+answer: 2,
+picture: "https://static2.thequizimages.com/wordpress/wp-content/uploads/2017/08/LordoftheRings06-e1503608522745.jpg?q=50&fit=crop&w=963&h=494&dpr=1.5"
 
 },
 
@@ -183,8 +184,8 @@ options: [
 
 ],
 
-answer: 3
-//"picture": "https://static0.thequizimages.com/wordpress/wp-content/uploads/2017/06/Legalos-in-The-Lord-of-the-Rings-The-Two-Towers.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+answer: 3,
+picture: "https://static0.thequizimages.com/wordpress/wp-content/uploads/2017/06/Legalos-in-The-Lord-of-the-Rings-The-Two-Towers.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -204,8 +205,8 @@ options: [
 
 ],
 
-nswer: 1
-//"picture": "https://static1.thequizimages.com/wordpress/wp-content/uploads/2017/06/Frodo-in-The-Lord-of-the-Rings-The-Two-Towers.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+answer: 1,
+picture: "https://static1.thequizimages.com/wordpress/wp-content/uploads/2017/06/Frodo-in-The-Lord-of-the-Rings-The-Two-Towers.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -225,8 +226,8 @@ options: [
 
 ],
 
-answer: 3
-//"picture": "https://static1.thequizimages.com/wordpress/wp-content/uploads/2017/06/Gandal-in-Bag-End-in-The-Lord-of-the-Rings.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+answer: 3,
+picture: "https://static1.thequizimages.com/wordpress/wp-content/uploads/2017/06/Gandal-in-Bag-End-in-The-Lord-of-the-Rings.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -246,8 +247,8 @@ options: [
 
 ],
 
-answer: 2
-//"picture": "https://static1.thequizimages.com/wordpress/wp-content/uploads/2017/10/Nazgul-The-Lord-of-The-Rings.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+answer: 2,
+picture: "https://static1.thequizimages.com/wordpress/wp-content/uploads/2017/10/Nazgul-The-Lord-of-The-Rings.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -267,8 +268,8 @@ options: [
 
 ],
 
-answer: 2
-//"picture": "https://static2.thequizimages.com/wordpress/wp-content/uploads/2017/11/Sauron-The-Lord-of-the-Rings.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+answer: 2,
+picture: "https://static2.thequizimages.com/wordpress/wp-content/uploads/2017/11/Sauron-The-Lord-of-the-Rings.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -288,8 +289,8 @@ options: [
 
 ],
 
-answer: 1
-//"picture": "https://static0.thequizimages.com/wordpress/wp-content/uploads/2017/05/Galadriel-Lord-of-the-Rings-Cate-Blanchett.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+answer: 1,
+picture: "https://static0.thequizimages.com/wordpress/wp-content/uploads/2017/05/Galadriel-Lord-of-the-Rings-Cate-Blanchett.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -309,8 +310,8 @@ options: [
 
 ],
 
-answer: 3
-//"picture": "https://static2.thequizimages.com/wordpress/wp-content/uploads/2017/11/Bilbo-Gandalf-The-Lord-of-the-Rings-e1523572658924.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+answer: 3,
+picture: "https://static2.thequizimages.com/wordpress/wp-content/uploads/2017/11/Bilbo-Gandalf-The-Lord-of-the-Rings-e1523572658924.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -330,8 +331,8 @@ options: [
 
 ],
 
-answer: 2
-//"picture": "https://static0.thequizimages.com/wordpress/wp-content/uploads/2017/09/the-fellowship-of-the-ring-15-years-later-220127-1280x0.jpg?q=50&fit=crop&w=963&h=529&dpr=1.5"
+answer: 2,
+picture: "https://static0.thequizimages.com/wordpress/wp-content/uploads/2017/09/the-fellowship-of-the-ring-15-years-later-220127-1280x0.jpg?q=50&fit=crop&w=963&h=529&dpr=1.5"
 
 },
 
@@ -351,8 +352,8 @@ options: [
 
 ],
 
-answer: 1
-//"picture": "https://static3.thequizimages.com/wordpress/wp-content/uploads/2017/10/Saruman-The-Lord-of-the-Rings.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+answer: 1,
+picture: "https://static3.thequizimages.com/wordpress/wp-content/uploads/2017/10/Saruman-The-Lord-of-the-Rings.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -372,8 +373,8 @@ options: [
 
 ],
 
-answer: 2
-//"picture": "https://static0.thequizimages.com/wordpress/wp-content/uploads/2017/11/Witch-King-The-Lord-of-the-Rings.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+answer: 2,
+picture: "https://static0.thequizimages.com/wordpress/wp-content/uploads/2017/11/Witch-King-The-Lord-of-the-Rings.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -393,8 +394,8 @@ options: [
 
 ],
 
-answer: 0
-//"picture": "https://static1.thequizimages.com/wordpress/wp-content/uploads/2017/05/Pippin-Lord-of-the-Rings-Billy-Boyd.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+answer: 0,
+picture: "https://static1.thequizimages.com/wordpress/wp-content/uploads/2017/05/Pippin-Lord-of-the-Rings-Billy-Boyd.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -414,8 +415,8 @@ options: [
 
 ],
 
-answer: 0
-//"picture": "https://static1.thequizimages.com/wordpress/wp-content/uploads/2017/11/Helms-Deep-The-Lord-of-the-Rings.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+answer: 0,
+picture: "https://static1.thequizimages.com/wordpress/wp-content/uploads/2017/11/Helms-Deep-The-Lord-of-the-Rings.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -435,8 +436,8 @@ options: [
 
 ],
 
-answer: 2
-//"picture": "https://static3.thequizimages.com/wordpress/wp-content/uploads/2017/08/old_bilbo-e1520801185733.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+answer: 2,
+picture: "https://static3.thequizimages.com/wordpress/wp-content/uploads/2017/08/old_bilbo-e1520801185733.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -456,8 +457,8 @@ options: [
 
 ],
 
-answer: 0
-//"picture": "https://static0.thequizimages.com/wordpress/wp-content/uploads/2017/11/The-Stairs-of-Cirith-Ungol-The-Lord-of-the-Rings.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+answer: 0,
+picture: "https://static0.thequizimages.com/wordpress/wp-content/uploads/2017/11/The-Stairs-of-Cirith-Ungol-The-Lord-of-the-Rings.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -477,8 +478,8 @@ options: [
 
 ],
 
-answer: 3
-//"picture": "https://static3.thequizimages.com/wordpress/wp-content/uploads/2017/11/Aragon-The-Lord-of-the-Rings.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+answer: 3,
+picture: "https://static3.thequizimages.com/wordpress/wp-content/uploads/2017/11/Aragon-The-Lord-of-the-Rings.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -498,8 +499,8 @@ options: [
 
 ],
 
-answer: 1
-//"picture": "https://static0.thequizimages.com/wordpress/wp-content/uploads/2017/05/Shelob-spider-Lord-of-the-Rings-e1523571883417.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+answer: 1,
+picture: "https://static0.thequizimages.com/wordpress/wp-content/uploads/2017/05/Shelob-spider-Lord-of-the-Rings-e1523571883417.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -519,8 +520,8 @@ options: [
 
 ],
 
-answer: 1
-//"picture": "https://static3.thequizimages.com/wordpress/wp-content/uploads/2017/05/Fangorn-treebeard-ent-Lord-of-the-Rings.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+answer: 1,
+picture: "https://static3.thequizimages.com/wordpress/wp-content/uploads/2017/05/Fangorn-treebeard-ent-Lord-of-the-Rings.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -540,8 +541,8 @@ options: [
 
 ],
 
-answer: 0
-//"picture": "https://static3.thequizimages.com/wordpress/wp-content/uploads/2017/05/Gimli-Lord-of-the-Rings-John-Rhys-Davies.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+answer: 0,
+picture: "https://static3.thequizimages.com/wordpress/wp-content/uploads/2017/05/Gimli-Lord-of-the-Rings-John-Rhys-Davies.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -561,8 +562,8 @@ options: [
 
 ],
 
-answer: 3
-//"picture": "https://static2.thequizimages.com/wordpress/wp-content/uploads/2017/11/Gandalf-Shadowfax-The-Lord-of-the-Rings-e1523572033819.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+answer: 3,
+picture: "https://static2.thequizimages.com/wordpress/wp-content/uploads/2017/11/Gandalf-Shadowfax-The-Lord-of-the-Rings-e1523572033819.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -582,8 +583,8 @@ options: [
 
 ],
 
-answer: 2
-//"picture": "https://static1.thequizimages.com/wordpress/wp-content/uploads/2017/05/Boromir-Sean-Bean-Lord-of-the-Rings-One-does-not-simply.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+answer: 2,
+picture: "https://static1.thequizimages.com/wordpress/wp-content/uploads/2017/05/Boromir-Sean-Bean-Lord-of-the-Rings-One-does-not-simply.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -603,8 +604,8 @@ options: [
 
 ],
 
-answer: 2
-//"picture": "https://static1.thequizimages.com/wordpress/wp-content/uploads/2017/08/LordOTRingsFellowship_086Pyxurz-e1520799550550.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+answer: 2,
+picture: "https://static1.thequizimages.com/wordpress/wp-content/uploads/2017/08/LordOTRingsFellowship_086Pyxurz-e1520799550550.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -624,8 +625,8 @@ options: [
 
 ],
 
-answer: 0
-//"picture": "https://static2.thequizimages.com/wordpress/wp-content/uploads/2017/08/LOTR-Fellowship-of-the-Ring-230-e1503608970137.jpg?q=50&fit=crop&w=963&h=483&dpr=1.5"
+answer: 0,
+picture: "https://static2.thequizimages.com/wordpress/wp-content/uploads/2017/08/LOTR-Fellowship-of-the-Ring-230-e1503608970137.jpg?q=50&fit=crop&w=963&h=483&dpr=1.5"
 
 },
 
@@ -645,8 +646,8 @@ options: [
 
 ],
 
-answer: 0
-//"picture": "https://static3.thequizimages.com/wordpress/wp-content/uploads/2017/08/screenshot-lord-of-the-rings-the-fellowship-of-the-ring-film-5-e1503609217733.jpg?q=50&fit=crop&w=963&h=482&dpr=1.5"
+answer: 0,
+picture: "https://static3.thequizimages.com/wordpress/wp-content/uploads/2017/08/screenshot-lord-of-the-rings-the-fellowship-of-the-ring-film-5-e1503609217733.jpg?q=50&fit=crop&w=963&h=482&dpr=1.5"
 
 },
 
@@ -666,8 +667,8 @@ options: [
 
 ],
 
-answer: 1
-//"picture": "https://static1.thequizimages.com/wordpress/wp-content/uploads/2017/06/Gimli-in-The-Lord-of-the-Rings.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+answer: 1,
+picture: "https://static1.thequizimages.com/wordpress/wp-content/uploads/2017/06/Gimli-in-The-Lord-of-the-Rings.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -687,8 +688,8 @@ options: [
 
 ],
 
-answer: 3
-//"picture": "https://static3.thequizimages.com/wordpress/wp-content/uploads/2017/11/Saruman-The-Lord-of-the-Rings.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+answer: 3,
+picture: "https://static3.thequizimages.com/wordpress/wp-content/uploads/2017/11/Saruman-The-Lord-of-the-Rings.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 },
 
@@ -708,8 +709,8 @@ options: [
 
 ],
 
-answer: 2
-//"picture": "https://static0.thequizimages.com/wordpress/wp-content/uploads/2017/06/Treebeard-in-The-Lord-of-the-Rings-The-Two-Towers.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
+answer: 2,
+picture: "https://static0.thequizimages.com/wordpress/wp-content/uploads/2017/06/Treebeard-in-The-Lord-of-the-Rings-The-Two-Towers.jpg?q=50&fit=crop&w=963&h=481&dpr=1.5"
 
 }
 
@@ -718,8 +719,10 @@ answer: 2
 // set questions and options and question number
 totalQuestionSpan.innerHTML = 10;
 
+
 function load() {
     questionNumberSpan.innerHTML = index + 1;
+    picture.innerHTML = '<img src="'+ questions[questionIndex].picture +'" />';
     question.innerHTML = questions[questionIndex].q;
     op1.innerHTML = questions[questionIndex].options[0];
     op2.innerHTML = questions[questionIndex].options[1];
