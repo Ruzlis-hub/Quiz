@@ -19,7 +19,7 @@ main {
 
 
 .main-bg{
-      background-image: url(/IMG/question-marks-art-backgrounds.jpeg);
+      background-image: url(../IMG/question-marks-art-backgrounds.jpeg);
     background-size: cover;
 }
 .main-bg-filter{
